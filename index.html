@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentation</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <header><h1> HTML & CSS</h1></header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#What_is_HTML?" class="nav-link">What is HTML?</a></li>
+            <li><a href="#HTML_elements" class="nav-link">HTML elements</a></li>
+            <li><a href="#HTML_document_structure" class="nav-link">HTML document structure</a></li>
+            <li><a href="#Structure_explained" class="nav-link">Structure explained</a></li>
+            <li><a href="#Headings_and_paragraphs" class="nav-link">Headings and paragraphs</a></li>
+            <li><a href="#HTML_lists" class="nav-link">HTML lists</a></li>
+            <li><a href="#What_is_CSS?" class="nav-link css-link">What is CSS?</a></li>
+            <li><a href="#CSS_selectors" class="nav-link css-link">CSS selectors</a></li>
+            <li><a href="#CSS_syntax" class="nav-link css-link">CSS syntax</a></li>
+            <li><a href="#Box_model" class="nav-link css-link">Box model</a></li>
+            <li><a href="#CSS_colour_methods" class="nav-link css-link">CSS colour methods</a></li>
+            <li><a href="#Text_formating" class="nav-link css-link">Text formating</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>HTML and CSS are two languages that work together to create everything that you see when you look at something on the internet.</p>
+                <p>HTML is the raw data that a webpage is built out of. All the text, links, cards, lists, and buttons are created in HTML. CSS is what adds style to those plain elements. HTML puts information on a webpage, and CSS positions that information, gives it color, changes the font, and makes it look great!</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="What_is_HTML?">
+            <header>What is HTML?</header>
+            <article>
+                <p>HTML stands for "Hyper Text Markup Language". Its the standard markup language for creating web pages.</p>
+                <p>HTML defines the various elements of a web page, such as headings, paragraphs, images, links, and forms. HTML uses a series of tags to define each element, and these tags are interpreted by web browsers to display the content of the page.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_elements">
+            <header>HTML elements</header>
+            <article>
+                <p>An HTML element is the complete structure, including the opening tag, content (if any), and the closing tag (if applicable).</p>
+                <p>For example, the <span class="orange">&lt;p&gt;</span> tag is used to define a paragraph of text, and the <span class="orange">&lt;img&gt;</span> tag is used to insert an image into a web page.</p>
+                <p>A HTML tag is the actual keyword or name enclosed in angle brackets, that tells the browser what kind of content to expect.</p>
+                <p>Attributes provide additional information about an element. They are placed inside the opening tags. Common attributes include class, id, href, and src.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>a href="https://www.example.com"<span class="yellow">&gt;</span><span class="white">Example Website</span><span class="yellow">&lt;/</span>a<span class="yellow">&gt;</span></span></code>
+
+                <ul>
+                    <li>href is an attribute of the <span class="orange">&lt;a&gt;</span> tag that defines the URL of the link.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_document_structure">
+            <header>HTML document structure</header>
+            <article>
+                <p>A HTML structure, also known as <em>HTML skeleton</em>, is basic structure, which contains the essential building-block elements upon which all web pages are created.</p>
+                <p>It consists of several parts, including the document type declaration, the HTML element, the head element, and the body element.</p>
+                <p>Here's a look at a basic HTML document structure:</p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>!DOCTYPE html<span class="yellow">&gt;</span></span>
+                    <span class="html-code"><span class="yellow">&lt;</span>html lang="en"<span class="yellow">&gt;</span></span>
+                    <span class="html-code"><span class="yellow">&lt;</span>head<span class="yellow">&gt;</span></span>
+                    <span class="html-code"><span class="yellow">&lt;</span>title<span class="yellow">&gt;</span><span class="white">Page Title</span><span class="yellow">&lt;/</span>title<span class="yellow">&gt;</span></span>
+                        <span class="html-code"><span class="yellow">&lt;/</span>head<span class="yellow">&gt;</span></span>
+                        <span class="html-code"><span class="yellow">&lt;</span>body<span class="yellow">&gt;</span></span>
+                    
+                            <span class="html-code"><span class="yellow">&lt;</span>h1<span class="yellow">&gt;</span><span class="white">First Heading</span><span class="yellow">&lt;/</span>h1<span class="yellow">&gt;</span></span>
+                            <span class="html-code"><span class="yellow">&lt;</span>p<span class="yellow">&gt;</span><span class="white">Paragraph</span><span class="yellow">&lt;/</span>p<span class="yellow">&gt;</span></span>
+                        
+                        <span class="html-code"><span class="yellow">&lt;/</span>body<span class="yellow">&gt;</span></span>
+                        <span class="html-code"><span class="yellow">&lt;/</span>html<span class="yellow">&gt;</span></span>
+                </code>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Structure_explained">
+            <header>Structure explained</header>
+            <article>
+                <p>Let's see each part of this structure to understand its function and importance.</p>
+
+                <ul>
+                    <li>The <span class="orange">&lt;!DOCTYPE html&gt;</span> declaration (not a tag) tells the browser that the document is an HTML5 document.</li>
+
+                    <li>The <span class="orange">&lt;html&gt;</span> tag wraps the entire document, serving as the root element of an HTML page. It typically includes the lang attribute to specify the language of the content.</li>
+
+                    <li>The <span class="orange">&lt;head&gt;</span> element contains meta information about the HTML page. Elements within the head aren't visible on the front end of a webpage.</li>
+
+                    <li>The <span class="orange">&lt;title&gt;</span> element specifies a title for the HTML page, which is shown in the browser's title bar or in the page's tab when you visit a website</li>
+
+                    <li>The <span class="orange">&lt;body&gt;</span> section contains all the visible content of the web page, such as text, images, videos, hyperlinks, and more.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Headings_and_paragraphs">
+            <header>Headings and paragraphs</header>
+            <article>
+                <p>HTML headings and paragraphs are two of the most commonly used elements in creating web pages. Thanks to them, the structured content makes the reading experience easier and more enjoyable.</p>
+                <p>In HTML, each heading has to be wrapped in a heading element:</p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>h1<span class="yellow">&gt;</span><span class="white">Hello, I am the main heading</span><span class="yellow">&lt;/</span>h1<span class="yellow">&gt;</span></span>
+                </code>
+
+                <ul>
+                    <li>Headings are typically denoted using the <strong>h1</strong>-<strong>h6</strong> tags, their number define the hierarchy of information, where <span class="orange">&lt;h1&gt;</span> has the highest-level of importance, and <span class="orange">&lt;h6&gt;</span> has the lowest-level of importance.
+                    </li>
+                </ul>
+
+                <p>Just as for headings, each paragraph has to be wrapped in a paragraph element:</p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>p<span class="yellow">&gt;</span><span class="white">Hi, I am a example paragraph</span><span class="yellow">&lt;/</span>p<span class="yellow">&gt;</span></span>
+                </code>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="main-section" id="HTML_lists">
+            <header>HTML lists</header>
+            <article>
+                <p>HTML lists allow web developers to organize data on web pages into an ordered or unordered format. There are three types of lists that can be created in HTML: ordered lists, unordered lists, and definition lists.</p>
+                <p>An ordered list is a list where the items are marked with numbers by default. It is created using the <span class="orange">&lt;ol&gt;</span> tag, and each list item starts with <span class="orange">&lt;li&gt;</span> tag.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>ol<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.1</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.2</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.3</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    <span class="yellow">&lt;/</span>ol<span class="yellow">&gt;</span></span></code>
+
+                <ol>
+                    <li>List item no.1</li>
+                    <li>List item no.2</li>
+                    <li>List item no.3</li>
+                </ol>
+
+                <p>An unordered list is a list where the items are marked with bullets or unnumbered by default. It is created using the <span class="orange">&lt;ul&gt;</span> tag, and each list item starts with <span class="orange">&lt;li&gt;</span> tag.</p></p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>ul<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.1</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.2</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>li<span class="yellow">&gt;</span><span class="white">List item no.3</span><span class="yellow">&lt;</span>li<span class="yellow">&gt;</span>
+                    <span class="yellow">&lt;/</span>ul<span class="yellow">&gt;</span></span></code>
+
+                <ul>
+                    <li>List item no.1</li>
+                    <li>List item no.2</li>
+                    <li>List item no.3</li>
+                </ul>
+
+                <p>An description list is a list where each item has a term and a corresponding definition. It is created using the <span class="orange">&lt;dl&gt;</span> tag, and each term and definition is represented by the <span class="orange">&lt;dt&gt;</span> and <span class="orange">&lt;dd&gt;</span> tags.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="html-code"><span class="yellow">&lt;</span>dl<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span><span class="white">Term no.1</span><span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span><span class="white">Definition no.1</span><span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span><span class="white">Term no.2</span><span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span><span class="white">Definition no.2</span><span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span><span class="white">Term no.2</span><span class="yellow">&lt;</span>dt<span class="yellow">&gt;</span>
+                    &nbsp;<span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span><span class="white">Definition no.3</span><span class="yellow">&lt;</span>dd<span class="yellow">&gt;</span>
+                    <span class="yellow">&lt;/</span>dl<span class="yellow">&gt;</span></span></code>
+
+                    <dl>
+                        <dt>Term no.1</dt>
+                        <dd>Definition no.1</dd>
+                        <dt>Term no.2</dt>
+                        <dd>Definition no.2</dd>
+                        <dt>Term no.3</dt>
+                        <dd>Definition no.3</dd>
+                    </dl>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="main-section" id="What_is_CSS?">
+            <header>What is CSS?</header>
+            <article>
+                <p>CSS stands for "Cascading Style Sheets". Its a stylesheet language used to define the presentation and layout of HTML documents.</p>
+                <p>CSS allows you to apply styles to HTML documents by prescribing colors, backgrounds, fonts, spacing, and positioning. It can be used to create complex designs, such as multi-column layouts, responsive designs that adjust to different screen sizes, transitions, etc.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_selectors">
+            <header>CSS selectors</header>
+            <article>
+                <p>CSS selectors specifies which HTML elements the rule applies to. The "property" defines the styling property that will be changed, such as font, background or their colors. The "value" specifies the value for the property.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">selector</span> <span class="yellow">{</span>
+                   property<span class="yellow">:</span> <span class="white">value</span><span class="yellow">;
+                    }</span></span></code>
+
+                <p>There are several types of selectors. Each of them are used to target specific HTML elements to apply styling to:</p>
+
+                <ul>
+                    <li>Element selectors:</li>
+                    <p class="selector-list">These target specific HTML element, such as <span class="blue">&lt;h1&gt;</span> for headings or <span class="blue">&lt;p&gt;</span> for paragraphs.</p>
+                    <li>Class selectors</li>
+                    <p class="selector-list">These target element with class atribute, specified with a <span class="blue">.</span>, followed by the class name.</p>
+                    <li>ID selectors:</li>
+                    <p class="selector-list">These target element with ID atribute, specified with a <span class="blue">#</span>, followed by the ID name.</p>
+                    <li>Universal selector:</li>
+                    <p class="selector-list">These target all HTML elements on the page, specified only with a <span class="blue">*</span> and nothing more.
+                    <li>Attribute selectors:</li>
+                    <p class="selector-list">These target element with attribute value. For example, <span class="blue">[type="checkbox"]</span> would target all checkbox input fields
+                    <li>Pseudo-class selectors:</li>
+                    <p class="selector-list">These target elements based on their state or position. For example, <span class="blue">:hover</span> for when the user hovers over an element with their mouse, or <span class="blue">:active</span> for when the user activates an element.
+                </ul>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_syntax">
+            <header>CSS syntax</header>
+            <article>
+                <p>CSS syntax, also knows as CSS <em>skin</em>, consists of a set of rules. This ruleset defines how elements on a web page should be displayed.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">*</span> <span class="yellow">{</span>
+                    margin<span class="yellow">:</span> <span class="white">0</span><span class="yellow">;</span>
+                    padding<span class="yellow">:</span> <span class="white">0</span><span class="yellow">;</span>
+                    box-sizing<span class="yellow">:</span> <span class="white">border-box</span><span class="yellow">;
+                    }</span></span>
+
+                    <span class="css-code"><span class="code-blue">h1</span> <span class="yellow">{</span>
+                        text-align<span class="yellow">:</span> <span class="white">center</span><span class="yellow">;
+                    }</span></span>
+
+                    <span class="css-code"><span class="code-blue">.credit</span> <span class="yellow">{</span>
+                        color<span class="yellow">:</span> <span class="white">#000</span><span class="yellow">;
+                    }</span></span>
+
+                    <span class="css-code"><span class="code-blue">#navbar</span> <span class="yellow">{</span>
+                        background-color<span class="yellow">:</span> <span class="white">lightblue</span><span class="yellow">;
+                    }</span></span>
+
+                    <span class="css-code"><span class="code-blue">a[href="https://example.org"]</span> <span class="yellow">{</span>
+                        color<span class="yellow">:</span> <span class="white">green</span><span class="yellow">;
+                      }</span></span>
+
+                      <span class="css-code"><span class="code-blue">h1:hover</span> <span class="yellow">{</span>
+                        color<span class="yellow">:</span> <span class="white">green</span><span class="yellow">;
+                    }</span></span>
+                </code>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Box_model">
+            <header>Box model</header>
+            <article>
+                <p>The CSS box model is essentially a rectangular box that wraps around every HTML element. Each box has four main parts:</p>
+
+                <ul>
+                    <li>The <span class="blue">Content</span> of the box, where the actual content of the element is displayed, such as text or image.</li>
+                    <li>The <span class="blue">Padding</span> is the transparent space between the content area and the border.</li>
+                    <li>The <span class="blue">Border</span> is a separating line that surrounds the element.</li>
+                    <li>The <span class="blue">Margin</span> is the transparent space between the border of the element and other elements on the page.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_colour_methods">
+            <header>CSS colour methods</header>
+            <article>
+                <p>In CSS, colors are specified using a variety of methods, such as predefined color names, or HEX, RGB, HSL values.</p>
+                <p>Color keywords are predefined color names such as "<span class="red">red</span>" or "<span class="green">green</span>"</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">h1</span> <span class="yellow">{</span>
+                    color<span class="yellow">:</span><span class="white"> red</span><span class="yellow">;
+                }</span></span></code>
+
+                <p>HEX values are six-digit codes that represent colors in the RGB color model.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">h1</span> <span class="yellow">{</span>
+                    color<span class="yellow">:</span><span class="white"> #ff0000</span><span class="yellow">;
+                }</span></span></code>
+
+                <p>RGB values use a combination of red, green, and blue values.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">h1</span> <span class="yellow">{</span>
+                    color<span class="yellow">:</span><span class="white"> rgb(255, 0, 0)</span><span class="yellow">;
+                }</span></span></code>
+
+                <p>HSL values use a combination of hue, saturation, and lightness.</p>
+                <p><strong>Example:</strong></p>
+
+                <code><span class="css-code"><span class="code-blue">h1</span> <span class="yellow">{</span>
+                    color<span class="yellow">:</span><span class="white"> hsl(0, 100%, 50%)</span><span class="yellow">;
+                }</span></span></code>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Text_formating">
+            <header>Text formating</header>
+            <article>
+                <p>In CSS, text formating allows you to control the visual presentation of text on the web page using a variety of properties. such as:</p>
+                <ul>
+                    <li>The <span class="blue">Font-family</span> property sets the font to be used for the text.</li>
+                    <li>The <span class="blue">Font-size</span> property sets the size of the font.</li>
+                    <li>The <span class="blue">Font-weight</span> property sets the thickness or boldness of the text</li>
+                    <li>The <span class="blue">Font-style</span> property sets the style of the font. Such as italic or oblique.</li> 
+                    <li>The <span class="blue">Text-align</span> property specifies horizontal alignment of text within its container.</li>
+                    <li>The <span class="blue">Text-decoration</span> property can add decorations to the text.</li>
+                    <li>The <span class="blue">Text-transform</span> property can transform the text to uppercase, lowercase, or capitalized.</li>
+                    <li>Other properties, such as <span class="blue">word-specing</span>, or <span class="blue">Line-height</span> can be used to adjust the spacing between words or lines.</li>
+                </ul>
+            </article>
+        </section>
+
+        <br><br><br>
+
+        <p class="credit"><strong>{</strong>created by @Syconar<strong>}</strong></p>
+
+    </main>
+    
+</body>
+</html>

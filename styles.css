@@ -1,0 +1,229 @@
+html, body {
+    min-height: 290px;
+    font-family: monospace;
+    line-height: 1.1;
+}
+
+/***** Navigation bar *****/
+
+#navbar {
+    border-right: 1px solid rgba(77, 78, 83, 0.5);
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid rgba(77, 78, 83, 0.7);
+    margin: 10px 30px 0 30px;
+    word-spacing: -0.4ch;
+}
+
+#navbar ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    height: 80%;
+    padding: 10px;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 8px 33px;
+    text-decoration: none;
+    color: #4d4e53 ;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#navbar a:hover,
+#navbar a:active {
+    color: #ffa500;
+}
+
+#navbar .css-link:hover,
+#navbar .css-link:active {
+    color: #00a3e9;
+}
+
+/***** Navigation bar END *****/
+
+
+
+/***** Main *****/
+
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    margin-right: 17px;
+    margin-top: 20px;
+    
+}
+
+header {
+    font-family: Courier;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+section header {
+    font-size: 2.2rem;
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-block-start: 1.1em;
+    margin-block-end: 1.1em;
+    word-spacing: -0.3ch;
+    line-height: 1.2;
+}
+
+#HTML_elements ul li,
+#Structure_explained ul li,
+#Headings_and_paragraphs ul li,
+#CSS_selectors ul li,
+#Box_model ul li {
+    margin-top: 8px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+#CSS_selectors ul li {
+    font-weight: 600;
+}
+
+#HTML_lists dl {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+article {
+    font-size: 1.2rem;
+}
+
+.selector-list {
+    padding-left: 50px;
+    margin: 5px 10px;
+}
+
+/***** Main END *****/
+
+
+
+/***** Code text *****/
+
+code {
+    display: block;
+    position: relative;
+    text-align: left;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    white-space: pre-line;
+    padding: 15px;
+    margin: 10px;
+    background: rgba(31, 31, 31, 0.9);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.html-code {
+    color: #ffa500;
+}
+
+.css-code {
+ color: #7bd7ff;
+}
+
+/***** Code text END*****/
+
+
+/***** Span text *****/
+
+.orange {
+    color: #ff9100;
+    background: rgba(215, 215, 219, 0.4);
+    padding: 0 2px;
+    border-radius: 15%;
+}
+
+.blue {
+    color: #00a3e9;
+    background: rgba(215, 215, 219, 0.4);
+    padding: 0 2px;
+    border-radius: 15%;
+}
+
+.code-blue {
+    color: #00a3e9;
+}
+
+.yellow {
+    color: #fffb00;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    color: #ff0000;
+    background: rgba(215, 215, 219, 0.4);
+    padding: 0 2px;
+    border-radius: 15%;
+}
+
+.green {
+    color: #008000;
+    background: rgba(215, 215, 219, 0.4);
+    padding: 0 2px;
+    border-radius: 15%;
+}
+
+/***** Span text END *****/
+
+/***** Credit *****/
+
+.credit {
+    font-size: 0.9rem;
+    text-align: right;
+    color: rgb(77, 78, 83, 0.5);
+    cursor: default;
+    z-index: 100;
+}
+
+.credit strong {
+    color: rgb(0, 0, 0, 0.6);
+}
+
+/***** Credit END *****/
+
+
+
+/***** Media *****/
+
+@media only screen and (max-width: 640px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+    #navbar{
+        height: 100%;
+        position: static;
+        width: 50%;
+        min-width: 50%;
+        border: none;
+      }}
